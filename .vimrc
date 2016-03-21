@@ -328,5 +328,3 @@ set t_Co=256                 " 256 color mode
 
 "set list listchars=tab:▸·,eol:¬,precedes:«,extends:»,trail:·,nbsp:·
 "set list listchars=tab:\▸\ ,eol:¶,precedes:«,extends:»,trail:·,nbsp:·
-
-
