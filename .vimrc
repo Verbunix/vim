@@ -239,11 +239,21 @@ set ls=2             " всегда показываем статусбар
 """"""""""""""""""
 set wildmenu
 set wcm=<Tab>
-menu Exit.quit     :quit<CR>
-menu Exit.quit!    :quit!<CR>
-menu Exit.save     :w<CR>
-menu Exit.save+quit     :wq<CR>
-map <F10> :emenu Exit.<Tab>
+menu MyMenu.[File].quit :quit<CR>
+menu MyMenu.[File].quit! :quit!<CR>
+menu MyMenu.[File].save :w<CR>
+menu MyMenu.[File].save+quit :wq<CR>
+menu MyMenu.[Edit].nohlsearch :nohlsearch<CR>
+"== Выделение ==
+menu MyMenu.[Edit].вставить :p<CR>
+menu MyMenu.[Edit].копировать :y<CR>
+menu MyMenu.[Edit].удалить :d<CR>
+menu MyMenu.[Edit].к_нижнему_регистру :gu<CR>
+menu MyMenu.[Edit].к_верхнему_регистру :gU<CR>
+"== Буферы / Вкладки ==
+menu MyMenu.[Buffers].next :gt<CR>
+menu MyMenu.[Buffers].previous :gT<CR>
+map <F10> :emenu MyMenu.<Tab>
 
 "Включаем PageUp/PageDown
 nnoremap <PageUp> <C-u>
@@ -328,3 +338,5 @@ set t_Co=256                 " 256 color mode
 
 "set list listchars=tab:▸·,eol:¬,precedes:«,extends:»,trail:·,nbsp:·
 "set list listchars=tab:\▸\ ,eol:¶,precedes:«,extends:»,trail:·,nbsp:·
+
+
