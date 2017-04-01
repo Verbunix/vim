@@ -65,6 +65,17 @@ Plugin 'ntpeters/vim-better-whitespace'
 "Jedi-vim autocomplete plugin
 Plugin 'davidhalter/jedi-vim'
 
+"Vue.JS
+Plugin 'posva/vim-vue'
+
+"JavaScript
+Plugin 'pangloss/vim-javascript'
+
+"Node
+Plugin 'guileen/vim-node-dict'
+
+"HTML5
+Plugin 'othree/html5.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
